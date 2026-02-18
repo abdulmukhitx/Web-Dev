@@ -1,0 +1,149 @@
+﻿/* Base settings*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #fff;
+    color: #333;
+}
+
+/* Container to center the app and limit width*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Headings*/
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form and input grouping using flexbox*/
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.todo-input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons*/
+.btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-add,
+.btn.add {
+    background: #4a90e2;
+    color: #fff;
+}
+.btn-add:hover {
+    background: #357ab8;
+}
+.btn-clear-completed {
+    background: #f39c12;
+    color: #fff;
+}
+.btn-clear-all {
+    background: #e74c3c;
+    color: #fff;
+}
+.btn-delete,
+button.delete {
+    background: #e74c3c;
+    color: #fff;
+}
+
+/* List styling */
+ul.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+/* Stats section uses flex layout */
+.stats-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Empty state message */
+.empty-state {
+    text-align: center;
+    color: #777;
+    margin-top: 1rem;
+}
+
+/* Action buttons container */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Header and footer */
+.header,
+.footer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.subtitle {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #999;
+}
